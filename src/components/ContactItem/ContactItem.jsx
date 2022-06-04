@@ -4,7 +4,11 @@ const ContactItem = ({ name, number, id, onDeleteContacts }) => {
     <li className={s.li}>
       <div className={s.divItemContainer}>
         {name}: {number}{' '}
-        <button className={s.button} onClick={() => onDeleteContacts(id)}>
+        <button
+          type="button"
+          className={s.button}
+          onClick={() => onDeleteContacts(id)}
+        >
           Delete
         </button>
       </div>
